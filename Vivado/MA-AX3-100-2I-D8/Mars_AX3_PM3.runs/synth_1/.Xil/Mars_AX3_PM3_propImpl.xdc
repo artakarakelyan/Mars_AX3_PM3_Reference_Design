@@ -4,7 +4,7 @@ set_property SRC_FILE_INFO {cfile:f:/GitHub/Mars_AX3_PM3_Reference_Design/Vivado
 set_property SRC_FILE_INFO {cfile:f:/GitHub/Mars_AX3_PM3_Reference_Design/Vivado/MA-AX3-100-2I-D8/Mars_AX3_PM3.srcs/sources_1/bd/Mars_AX3/ip/Mars_AX3_SDRAM_0/Mars_AX3_SDRAM_0/Mars_AX3_SDRAM_0_in_context.xdc rfile:../../../Mars_AX3_PM3.srcs/sources_1/bd/Mars_AX3/ip/Mars_AX3_SDRAM_0/Mars_AX3_SDRAM_0/Mars_AX3_SDRAM_0_in_context.xdc id:4 order:EARLY scoped_inst:Mars_AX3_i/Memory/SDRAM} [current_design]
 set_property SRC_FILE_INFO {cfile:f:/GitHub/Mars_AX3_PM3_Reference_Design/Vivado/MA-AX3-100-2I-D8/Mars_AX3_PM3.srcs/sources_1/bd/Mars_AX3/ip/Mars_AX3_axi_ethernet_0/Mars_AX3_axi_ethernet_0/Mars_AX3_axi_ethernet_0_in_context.xdc rfile:../../../Mars_AX3_PM3.srcs/sources_1/bd/Mars_AX3/ip/Mars_AX3_axi_ethernet_0/Mars_AX3_axi_ethernet_0/Mars_AX3_axi_ethernet_0_in_context.xdc id:5 order:EARLY scoped_inst:Mars_AX3_i/Ethernet/axi_ethernet} [current_design]
 set_property SRC_FILE_INFO {cfile:f:/GitHub/Mars_AX3_PM3_Reference_Design/Vivado/MA-AX3-100-2I-D8/Mars_AX3_PM3.srcs/sources_1/bd/Mars_AX3/ip/Mars_AX3_clk_wiz_0/Mars_AX3_clk_wiz_0/Mars_AX3_clk_wiz_0_in_context.xdc rfile:../../../Mars_AX3_PM3.srcs/sources_1/bd/Mars_AX3/ip/Mars_AX3_clk_wiz_0/Mars_AX3_clk_wiz_0/Mars_AX3_clk_wiz_0_in_context.xdc id:6 order:EARLY scoped_inst:Mars_AX3_i/Ethernet/clk_wiz} [current_design]
-set_property SRC_FILE_INFO {cfile:F:/GitHub/Mars_AX3_PM3_Reference_Design/src/Mars_AX3_PM3.tcl rfile:../../../../../src/Mars_AX3_PM3.tcl id:7 unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:F:/GitHub/Mars_AX3_PM3_Reference_Design/Vivado/MA-AX3-100-2I-D8/Mars_AX3_PM3.srcs/constrs_1/imports/src/Mars_AX3_PM3.tcl rfile:../../../Mars_AX3_PM3.srcs/constrs_1/imports/src/Mars_AX3_PM3.tcl id:7 unmanaged:yes} [current_design]
 current_instance Mars_AX3_i/CPU/mdm_0
 set_property src_info {type:SCOPED_XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 create_clock -period 33.333 [get_ports {}]
@@ -395,3 +395,7 @@ set_property src_info {type:XDC file:7 line:237 export:INPUT save:NONE read:READ
 set_property -dict {PACKAGE_PIN U12   IOSTANDARD LVCMOS18  } [get_ports {FX3_DQ0_UARTRX}]
 set_property src_info {type:XDC file:7 line:238 export:INPUT save:NONE read:READ} [current_design]
 set_property -dict {PACKAGE_PIN V12   IOSTANDARD LVCMOS18  } [get_ports {FX3_DQ2_UARTTX}]
+set_property src_info {type:XDC file:7 line:240 export:INPUT save:NONE read:READ} [current_design]
+set_property -dict {PACKAGE_PIN B3   IOSTANDARD LVCMOS18  } [get_ports {UART_RX}]
+set_property src_info {type:XDC file:7 line:241 export:INPUT save:NONE read:READ} [current_design]
+set_property -dict {PACKAGE_PIN B2   IOSTANDARD LVCMOS18  } [get_ports {UART_TX}]

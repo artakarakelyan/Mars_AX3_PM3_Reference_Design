@@ -185,7 +185,9 @@ entity Mars_AX3_PM3 is
     
     -- UART
     FX3_DQ0_UARTRX                 : in      std_logic;
-    FX3_DQ2_UARTTX                 : out     std_logic
+    FX3_DQ2_UARTTX                 : out     std_logic;
+    UART_RX                 : in      std_logic;
+    UART_TX                 : out     std_logic
   );
 end Mars_AX3_PM3;
 
@@ -362,8 +364,8 @@ begin
       QSPI_ss_o            => QSPI_ss_o,
       QSPI_ss_t            => QSPI_ss_t,
       SYS_RST_N            => Rst_N,
-      UART_rxd             => FX3_DQ0_UARTRX,
-      UART_txd             => FX3_DQ2_UARTTX
+      UART_rxd             => UART_RX,
+      UART_txd             => UART_TX
     );
   
   IIC_sda_iobuf: component IOBUF

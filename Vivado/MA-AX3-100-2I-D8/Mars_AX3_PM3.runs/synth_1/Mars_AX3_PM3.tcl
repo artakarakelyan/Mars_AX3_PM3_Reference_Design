@@ -70,8 +70,9 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param general.maxThreads 8
-set_msg_config -id {Common 17-41} -limit 10000000
+set_param synth.incrementalSynthesisCache C:/Users/Artak/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-25544-Artak-New/incrSyn
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-2
 
@@ -174,8 +175,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc -unmanaged F:/GitHub/Mars_AX3_PM3_Reference_Design/src/Mars_AX3_PM3.tcl
-set_property used_in_implementation false [get_files F:/GitHub/Mars_AX3_PM3_Reference_Design/src/Mars_AX3_PM3.tcl]
+read_xdc -unmanaged F:/GitHub/Mars_AX3_PM3_Reference_Design/Vivado/MA-AX3-100-2I-D8/Mars_AX3_PM3.srcs/constrs_1/imports/src/Mars_AX3_PM3.tcl
+set_property used_in_implementation false [get_files F:/GitHub/Mars_AX3_PM3_Reference_Design/Vivado/MA-AX3-100-2I-D8/Mars_AX3_PM3.srcs/constrs_1/imports/src/Mars_AX3_PM3.tcl]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

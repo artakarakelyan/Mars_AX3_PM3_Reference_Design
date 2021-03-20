@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date                      : Sat Mar 20 21:19:41 2021
+| Date                      : Sun Mar 21 00:10:45 2021
 | Host                      : Artak-New running 64-bit major release  (build 9200)
 | Command                   : report_io -file Mars_AX3_PM3_io_placed.rpt
 | Design                    : Mars_AX3_PM3
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|           170 |
+|           172 |
 +---------------+
 
 
@@ -54,8 +54,8 @@ Table of Contents
 | A17        |                     | High Range | VCCO_15                      | VCCO        |             |      15 |            |      |                     |                      |    1.50 |            |           |          |          |                  |              |                   |              |
 | A18        | DDR3_DQ[0]          | High Range | IO_L10N_T1_AD11N_15          | BIDIR       | SSTL15      |      15 |            | FAST |    UNTUNED_SPLIT_50 |            FP_VTT_50 |         | FIXED      |           |          | External | NONE             |              |                   |              |
 | B1         | FMC_LA32_P          | High Range | IO_L9P_T1_DQS_AD7P_35        | BIDIR       | LVCMOS18    |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |          | NONE             |              |                   |              |
-| B2         |                     | High Range | IO_L10N_T1_AD15N_35          | User IO     |             |      35 |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |
-| B3         |                     | High Range | IO_L10P_T1_AD15P_35          | User IO     |             |      35 |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |
+| B2         | UART_TX             | High Range | IO_L10N_T1_AD15N_35          | OUTPUT      | LVCMOS18    |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |          | NONE             |              |                   |              |
+| B3         | UART_RX             | High Range | IO_L10P_T1_AD15P_35          | INPUT       | LVCMOS18    |      35 |            |      |                     |                 NONE |         | FIXED      |           |          |          | NONE             |              |                   |              |
 | B4         | FMC_LA33_N          | High Range | IO_L7N_T1_AD6N_35            | BIDIR       | LVCMOS18    |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |          | NONE             |              |                   |              |
 | B5         |                     |            | GND                          | GND         |             |         |            |      |                     |                      |     0.0 |            |           |          |          |                  |              |                   |              |
 | B6         |                     | High Range | IO_L2N_T0_AD12N_35           | User IO     |             |      35 |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |
@@ -352,7 +352,7 @@ Table of Contents
 | V9         | FX3_DQ8             | High Range | IO_L21N_T3_DQS_34            | BIDIR       | LVCMOS18    |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |          | NONE             |              |                   |              |
 | V10        |                     | High Range | IO_L21P_T3_DQS_14            | User IO     |             |      14 |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |
 | V11        |                     | High Range | IO_L21N_T3_DQS_A06_D22_14    | User IO     |             |      14 |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |
-| V12        | FX3_DQ2_UARTTX      | High Range | IO_L20N_T3_A07_D23_14        | OUTPUT      | LVCMOS18    |      14 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |          | NONE             |              |                   |              |
+| V12        | FX3_DQ2_UARTTX      | High Range | IO_L20N_T3_A07_D23_14        | TRISTATE    | LVCMOS18    |      14 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |          | NONE             |              |                   |              |
 | V13        |                     |            | GND                          | GND         |             |         |            |      |                     |                      |     0.0 |            |           |          |          |                  |              |                   |              |
 | V14        |                     | High Range | IO_L22N_T3_A04_D20_14        | User IO     |             |      14 |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |
 | V15        | ETH_RXD[2]          | High Range | IO_L16P_T2_CSI_B_14          | INPUT       | LVCMOS18    |      14 |            |      |                     |                 NONE |         | FIXED      |           |          |          | NONE             |              |                   |              |

@@ -73,56 +73,20 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_auto_cc_0/Mars_AX3_auto_cc_0.xci">
-          <Proxy FileSetName="Mars_AX3_auto_cc_0"/>
+        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_lmb_bram_0/Mars_AX3_lmb_bram_0.xci">
+          <Proxy FileSetName="Mars_AX3_lmb_bram_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_UART_0/Mars_AX3_UART_0.xci">
-          <Proxy FileSetName="Mars_AX3_UART_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/ip_5/bd_a7e0_util_vector_logic_0_0.xci">
-          <Proxy FileSetName="bd_a7e0_util_vector_logic_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_auto_pc_0/Mars_AX3_auto_pc_0.xci">
-          <Proxy FileSetName="Mars_AX3_auto_pc_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_axi_timer_0/Mars_AX3_axi_timer_0.xci">
-          <Proxy FileSetName="Mars_AX3_axi_timer_0"/>
+        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_SDRAM_0/Mars_AX3_SDRAM_0.xci">
+          <Proxy FileSetName="Mars_AX3_SDRAM_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_mdm_0_0/Mars_AX3_mdm_0_0.xci">
           <Proxy FileSetName="Mars_AX3_mdm_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_lmb_bram_0/Mars_AX3_lmb_bram_0.xci">
-          <Proxy FileSetName="Mars_AX3_lmb_bram_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_LEDs_0/Mars_AX3_LEDs_0.xci">
-          <Proxy FileSetName="Mars_AX3_LEDs_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_QSPI_0/Mars_AX3_QSPI_0.xci">
-          <Proxy FileSetName="Mars_AX3_QSPI_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_xbar_1/Mars_AX3_xbar_1.xci">
-          <Proxy FileSetName="Mars_AX3_xbar_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_rst_mig_7series_0_100M_0_0/Mars_AX3_rst_mig_7series_0_100M_0_0.xci">
-          <Proxy FileSetName="Mars_AX3_rst_mig_7series_0_100M_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_xadc_wiz_0_0/Mars_AX3_xadc_wiz_0_0.xci">
-          <Proxy FileSetName="Mars_AX3_xadc_wiz_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_microblaze_CPU_0/Mars_AX3_microblaze_CPU_0.xci">
-          <Proxy FileSetName="Mars_AX3_microblaze_CPU_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_microblaze_axi_intc_0/Mars_AX3_microblaze_axi_intc_0.xci">
-          <Proxy FileSetName="Mars_AX3_microblaze_axi_intc_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_ilmb_bram_if_cntlr_0/Mars_AX3_ilmb_bram_if_cntlr_0.xci">
           <Proxy FileSetName="Mars_AX3_ilmb_bram_if_cntlr_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_xbar_0/Mars_AX3_xbar_0.xci">
-          <Proxy FileSetName="Mars_AX3_xbar_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_IIC_0/Mars_AX3_IIC_0.xci">
-          <Proxy FileSetName="Mars_AX3_IIC_0"/>
+        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_microblaze_axi_intc_0/Mars_AX3_microblaze_axi_intc_0.xci">
+          <Proxy FileSetName="Mars_AX3_microblaze_axi_intc_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_dlmb_bram_if_cntlr_0/Mars_AX3_dlmb_bram_if_cntlr_0.xci">
           <Proxy FileSetName="Mars_AX3_dlmb_bram_if_cntlr_0"/>
@@ -133,32 +97,68 @@
         <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_ilmb_v10_0/Mars_AX3_ilmb_v10_0.xci">
           <Proxy FileSetName="Mars_AX3_ilmb_v10_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_SDRAM_0/Mars_AX3_SDRAM_0.xci">
-          <Proxy FileSetName="Mars_AX3_SDRAM_0"/>
+        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_xadc_wiz_0_0/Mars_AX3_xadc_wiz_0_0.xci">
+          <Proxy FileSetName="Mars_AX3_xadc_wiz_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_rst_mig_7series_0_100M_1_0/Mars_AX3_rst_mig_7series_0_100M_1_0.xci">
-          <Proxy FileSetName="Mars_AX3_rst_mig_7series_0_100M_1_0"/>
+        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_LEDs_0/Mars_AX3_LEDs_0.xci">
+          <Proxy FileSetName="Mars_AX3_LEDs_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_IIC_0/Mars_AX3_IIC_0.xci">
+          <Proxy FileSetName="Mars_AX3_IIC_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_xbar_0/Mars_AX3_xbar_0.xci">
+          <Proxy FileSetName="Mars_AX3_xbar_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_microblaze_CPU_0/Mars_AX3_microblaze_CPU_0.xci">
+          <Proxy FileSetName="Mars_AX3_microblaze_CPU_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_axi_timer_0/Mars_AX3_axi_timer_0.xci">
+          <Proxy FileSetName="Mars_AX3_axi_timer_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_axi_ethernet_0/Mars_AX3_axi_ethernet_0.xci">
           <Proxy FileSetName="Mars_AX3_axi_ethernet_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_rst_mig_7series_0_100M_0_0/Mars_AX3_rst_mig_7series_0_100M_0_0.xci">
+          <Proxy FileSetName="Mars_AX3_rst_mig_7series_0_100M_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_auto_pc_0/Mars_AX3_auto_pc_0.xci">
+          <Proxy FileSetName="Mars_AX3_auto_pc_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_axi_dma_0/Mars_AX3_axi_dma_0.xci">
           <Proxy FileSetName="Mars_AX3_axi_dma_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_auto_cc_0/Mars_AX3_auto_cc_0.xci">
+          <Proxy FileSetName="Mars_AX3_auto_cc_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_clk_wiz_0/Mars_AX3_clk_wiz_0.xci">
           <Proxy FileSetName="Mars_AX3_clk_wiz_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/ip_2/bd_a7e0_c_shift_ram_0_0.xci">
-          <Proxy FileSetName="bd_a7e0_c_shift_ram_0_0"/>
+        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_rst_mig_7series_0_100M_1_0/Mars_AX3_rst_mig_7series_0_100M_1_0.xci">
+          <Proxy FileSetName="Mars_AX3_rst_mig_7series_0_100M_1_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/ip_3/bd_a7e0_c_counter_binary_0_0.xci">
-          <Proxy FileSetName="bd_a7e0_c_counter_binary_0_0"/>
+        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_xbar_1/Mars_AX3_xbar_1.xci">
+          <Proxy FileSetName="Mars_AX3_xbar_1"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/ip_1/bd_a7e0_mac_0.xci">
           <Proxy FileSetName="bd_a7e0_mac_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/ip_3/bd_a7e0_c_counter_binary_0_0.xci">
+          <Proxy FileSetName="bd_a7e0_c_counter_binary_0_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/ip_0/bd_a7e0_eth_buf_0.xci">
           <Proxy FileSetName="bd_a7e0_eth_buf_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/ip_5/bd_a7e0_util_vector_logic_0_0.xci">
+          <Proxy FileSetName="bd_a7e0_util_vector_logic_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/ip_2/bd_a7e0_c_shift_ram_0_0.xci">
+          <Proxy FileSetName="bd_a7e0_c_shift_ram_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_QSPI_0/Mars_AX3_QSPI_0.xci">
+          <Proxy FileSetName="Mars_AX3_QSPI_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Mars_AX3.bd" FileRelPathName="ip/Mars_AX3_UART_0/Mars_AX3_UART_0.xci">
+          <Proxy FileSetName="Mars_AX3_UART_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PPRDIR/../../src/Mars_AX3_PM3.vhd">
@@ -182,23 +182,29 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
-      <File Path="$PPRDIR/../../src/Mars_AX3_PM3.tcl">
+      <File Path="$PSRCDIR/constrs_1/imports/src/Mars_AX3_PM3.tcl">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../src/Mars_AX3_PM3.tcl"/>
+          <Attr Name="ImportTime" Val="1616269351"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../src/Mars_AX3_LED_timing.xdc">
+      <File Path="$PSRCDIR/constrs_1/imports/src/Mars_AX3_LED_timing.xdc">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../src/Mars_AX3_LED_timing.xdc"/>
+          <Attr Name="ImportTime" Val="1616270051"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
       </File>
       <Config>
+        <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/src/Mars_AX3_LED_timing.xdc"/>
         <Option Name="ConstrsType" Val="XDC"/>
       </Config>
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
+      <Filter Type="Srcs"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="Mars_AX3_PM3"/>
@@ -454,9 +460,7 @@
   <Runs Version="1" Minor="11">
     <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-2" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design" PreStepTclHook="$PPRDIR/../../scripts/settings.tcl"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -466,9 +470,7 @@
     </Run>
     <Run Id="Mars_AX3_auto_cc_0_synth_1" Type="Ft3:Synth" SrcSet="Mars_AX3_auto_cc_0" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_auto_cc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Mars_AX3_auto_cc_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -478,9 +480,7 @@
     </Run>
     <Run Id="Mars_AX3_UART_0_synth_1" Type="Ft3:Synth" SrcSet="Mars_AX3_UART_0" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_UART_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Mars_AX3_UART_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -490,9 +490,7 @@
     </Run>
     <Run Id="bd_a7e0_util_vector_logic_0_0_synth_1" Type="Ft3:Synth" SrcSet="bd_a7e0_util_vector_logic_0_0" Part="xc7a100tcsg324-2" ConstrsSet="bd_a7e0_util_vector_logic_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bd_a7e0_util_vector_logic_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -502,9 +500,7 @@
     </Run>
     <Run Id="Mars_AX3_auto_pc_0_synth_1" Type="Ft3:Synth" SrcSet="Mars_AX3_auto_pc_0" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_auto_pc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Mars_AX3_auto_pc_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -514,9 +510,7 @@
     </Run>
     <Run Id="Mars_AX3_axi_timer_0_synth_1" Type="Ft3:Synth" SrcSet="Mars_AX3_axi_timer_0" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_axi_timer_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Mars_AX3_axi_timer_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -526,9 +520,7 @@
     </Run>
     <Run Id="Mars_AX3_mdm_0_0_synth_1" Type="Ft3:Synth" SrcSet="Mars_AX3_mdm_0_0" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_mdm_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Mars_AX3_mdm_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -538,9 +530,7 @@
     </Run>
     <Run Id="Mars_AX3_lmb_bram_0_synth_1" Type="Ft3:Synth" SrcSet="Mars_AX3_lmb_bram_0" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_lmb_bram_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Mars_AX3_lmb_bram_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -550,9 +540,7 @@
     </Run>
     <Run Id="Mars_AX3_LEDs_0_synth_1" Type="Ft3:Synth" SrcSet="Mars_AX3_LEDs_0" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_LEDs_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Mars_AX3_LEDs_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -562,9 +550,7 @@
     </Run>
     <Run Id="Mars_AX3_QSPI_0_synth_1" Type="Ft3:Synth" SrcSet="Mars_AX3_QSPI_0" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_QSPI_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Mars_AX3_QSPI_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -574,9 +560,7 @@
     </Run>
     <Run Id="Mars_AX3_xbar_1_synth_1" Type="Ft3:Synth" SrcSet="Mars_AX3_xbar_1" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_xbar_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Mars_AX3_xbar_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -586,9 +570,7 @@
     </Run>
     <Run Id="Mars_AX3_rst_mig_7series_0_100M_0_0_synth_1" Type="Ft3:Synth" SrcSet="Mars_AX3_rst_mig_7series_0_100M_0_0" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_rst_mig_7series_0_100M_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Mars_AX3_rst_mig_7series_0_100M_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -598,9 +580,7 @@
     </Run>
     <Run Id="Mars_AX3_xadc_wiz_0_0_synth_1" Type="Ft3:Synth" SrcSet="Mars_AX3_xadc_wiz_0_0" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_xadc_wiz_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Mars_AX3_xadc_wiz_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -610,9 +590,7 @@
     </Run>
     <Run Id="Mars_AX3_microblaze_CPU_0_synth_1" Type="Ft3:Synth" SrcSet="Mars_AX3_microblaze_CPU_0" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_microblaze_CPU_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Mars_AX3_microblaze_CPU_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -622,9 +600,7 @@
     </Run>
     <Run Id="Mars_AX3_microblaze_axi_intc_0_synth_1" Type="Ft3:Synth" SrcSet="Mars_AX3_microblaze_axi_intc_0" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_microblaze_axi_intc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Mars_AX3_microblaze_axi_intc_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -634,9 +610,7 @@
     </Run>
     <Run Id="Mars_AX3_ilmb_bram_if_cntlr_0_synth_1" Type="Ft3:Synth" SrcSet="Mars_AX3_ilmb_bram_if_cntlr_0" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_ilmb_bram_if_cntlr_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Mars_AX3_ilmb_bram_if_cntlr_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -646,9 +620,7 @@
     </Run>
     <Run Id="Mars_AX3_xbar_0_synth_1" Type="Ft3:Synth" SrcSet="Mars_AX3_xbar_0" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_xbar_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Mars_AX3_xbar_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -658,9 +630,7 @@
     </Run>
     <Run Id="Mars_AX3_IIC_0_synth_1" Type="Ft3:Synth" SrcSet="Mars_AX3_IIC_0" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_IIC_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Mars_AX3_IIC_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -670,9 +640,7 @@
     </Run>
     <Run Id="Mars_AX3_dlmb_bram_if_cntlr_0_synth_1" Type="Ft3:Synth" SrcSet="Mars_AX3_dlmb_bram_if_cntlr_0" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_dlmb_bram_if_cntlr_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Mars_AX3_dlmb_bram_if_cntlr_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -682,9 +650,7 @@
     </Run>
     <Run Id="Mars_AX3_dlmb_v10_0_synth_1" Type="Ft3:Synth" SrcSet="Mars_AX3_dlmb_v10_0" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_dlmb_v10_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Mars_AX3_dlmb_v10_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -694,9 +660,7 @@
     </Run>
     <Run Id="Mars_AX3_ilmb_v10_0_synth_1" Type="Ft3:Synth" SrcSet="Mars_AX3_ilmb_v10_0" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_ilmb_v10_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Mars_AX3_ilmb_v10_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -706,9 +670,7 @@
     </Run>
     <Run Id="Mars_AX3_SDRAM_0_synth_1" Type="Ft3:Synth" SrcSet="Mars_AX3_SDRAM_0" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_SDRAM_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Mars_AX3_SDRAM_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -718,9 +680,7 @@
     </Run>
     <Run Id="Mars_AX3_rst_mig_7series_0_100M_1_0_synth_1" Type="Ft3:Synth" SrcSet="Mars_AX3_rst_mig_7series_0_100M_1_0" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_rst_mig_7series_0_100M_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Mars_AX3_rst_mig_7series_0_100M_1_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -730,9 +690,7 @@
     </Run>
     <Run Id="Mars_AX3_axi_ethernet_0_synth_1" Type="Ft3:Synth" SrcSet="Mars_AX3_axi_ethernet_0" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_axi_ethernet_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Mars_AX3_axi_ethernet_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -742,9 +700,7 @@
     </Run>
     <Run Id="Mars_AX3_axi_dma_0_synth_1" Type="Ft3:Synth" SrcSet="Mars_AX3_axi_dma_0" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_axi_dma_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Mars_AX3_axi_dma_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -754,9 +710,7 @@
     </Run>
     <Run Id="Mars_AX3_clk_wiz_0_synth_1" Type="Ft3:Synth" SrcSet="Mars_AX3_clk_wiz_0" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_clk_wiz_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Mars_AX3_clk_wiz_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -766,9 +720,7 @@
     </Run>
     <Run Id="bd_a7e0_c_shift_ram_0_0_synth_1" Type="Ft3:Synth" SrcSet="bd_a7e0_c_shift_ram_0_0" Part="xc7a100tcsg324-2" ConstrsSet="bd_a7e0_c_shift_ram_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bd_a7e0_c_shift_ram_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -778,9 +730,7 @@
     </Run>
     <Run Id="bd_a7e0_c_counter_binary_0_0_synth_1" Type="Ft3:Synth" SrcSet="bd_a7e0_c_counter_binary_0_0" Part="xc7a100tcsg324-2" ConstrsSet="bd_a7e0_c_counter_binary_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bd_a7e0_c_counter_binary_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -790,9 +740,7 @@
     </Run>
     <Run Id="bd_a7e0_mac_0_synth_1" Type="Ft3:Synth" SrcSet="bd_a7e0_mac_0" Part="xc7a100tcsg324-2" ConstrsSet="bd_a7e0_mac_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bd_a7e0_mac_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -802,9 +750,7 @@
     </Run>
     <Run Id="bd_a7e0_eth_buf_0_synth_1" Type="Ft3:Synth" SrcSet="bd_a7e0_eth_buf_0" Part="xc7a100tcsg324-2" ConstrsSet="bd_a7e0_eth_buf_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bd_a7e0_eth_buf_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -814,9 +760,7 @@
     </Run>
     <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-2" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design" PreStepTclHook="$PPRDIR/../../scripts/settings.tcl"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -834,9 +778,7 @@
     </Run>
     <Run Id="Mars_AX3_auto_cc_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_auto_cc_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Mars_AX3_auto_cc_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -853,9 +795,7 @@
     </Run>
     <Run Id="Mars_AX3_UART_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_UART_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Mars_AX3_UART_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -872,9 +812,7 @@
     </Run>
     <Run Id="bd_a7e0_util_vector_logic_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-2" ConstrsSet="bd_a7e0_util_vector_logic_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bd_a7e0_util_vector_logic_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -891,9 +829,7 @@
     </Run>
     <Run Id="Mars_AX3_auto_pc_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_auto_pc_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Mars_AX3_auto_pc_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -910,9 +846,7 @@
     </Run>
     <Run Id="Mars_AX3_axi_timer_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_axi_timer_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Mars_AX3_axi_timer_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -929,9 +863,7 @@
     </Run>
     <Run Id="Mars_AX3_mdm_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_mdm_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Mars_AX3_mdm_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -948,9 +880,7 @@
     </Run>
     <Run Id="Mars_AX3_lmb_bram_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_lmb_bram_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Mars_AX3_lmb_bram_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -967,9 +897,7 @@
     </Run>
     <Run Id="Mars_AX3_LEDs_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_LEDs_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Mars_AX3_LEDs_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -986,9 +914,7 @@
     </Run>
     <Run Id="Mars_AX3_QSPI_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_QSPI_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Mars_AX3_QSPI_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1005,9 +931,7 @@
     </Run>
     <Run Id="Mars_AX3_xbar_1_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_xbar_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Mars_AX3_xbar_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1024,9 +948,7 @@
     </Run>
     <Run Id="Mars_AX3_rst_mig_7series_0_100M_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_rst_mig_7series_0_100M_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Mars_AX3_rst_mig_7series_0_100M_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1043,9 +965,7 @@
     </Run>
     <Run Id="Mars_AX3_xadc_wiz_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_xadc_wiz_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Mars_AX3_xadc_wiz_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1062,9 +982,7 @@
     </Run>
     <Run Id="Mars_AX3_microblaze_CPU_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_microblaze_CPU_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Mars_AX3_microblaze_CPU_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1081,9 +999,7 @@
     </Run>
     <Run Id="Mars_AX3_microblaze_axi_intc_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_microblaze_axi_intc_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Mars_AX3_microblaze_axi_intc_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1100,9 +1016,7 @@
     </Run>
     <Run Id="Mars_AX3_ilmb_bram_if_cntlr_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_ilmb_bram_if_cntlr_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Mars_AX3_ilmb_bram_if_cntlr_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1119,9 +1033,7 @@
     </Run>
     <Run Id="Mars_AX3_xbar_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_xbar_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Mars_AX3_xbar_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1138,9 +1050,7 @@
     </Run>
     <Run Id="Mars_AX3_IIC_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_IIC_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Mars_AX3_IIC_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1157,9 +1067,7 @@
     </Run>
     <Run Id="Mars_AX3_dlmb_bram_if_cntlr_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_dlmb_bram_if_cntlr_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Mars_AX3_dlmb_bram_if_cntlr_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1176,9 +1084,7 @@
     </Run>
     <Run Id="Mars_AX3_dlmb_v10_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_dlmb_v10_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Mars_AX3_dlmb_v10_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1195,9 +1101,7 @@
     </Run>
     <Run Id="Mars_AX3_ilmb_v10_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_ilmb_v10_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Mars_AX3_ilmb_v10_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1214,9 +1118,7 @@
     </Run>
     <Run Id="Mars_AX3_SDRAM_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_SDRAM_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Mars_AX3_SDRAM_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1233,9 +1135,7 @@
     </Run>
     <Run Id="Mars_AX3_rst_mig_7series_0_100M_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_rst_mig_7series_0_100M_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Mars_AX3_rst_mig_7series_0_100M_1_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1252,9 +1152,7 @@
     </Run>
     <Run Id="Mars_AX3_axi_ethernet_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_axi_ethernet_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Mars_AX3_axi_ethernet_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1271,9 +1169,7 @@
     </Run>
     <Run Id="Mars_AX3_axi_dma_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_axi_dma_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Mars_AX3_axi_dma_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1290,9 +1186,7 @@
     </Run>
     <Run Id="Mars_AX3_clk_wiz_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-2" ConstrsSet="Mars_AX3_clk_wiz_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Mars_AX3_clk_wiz_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1309,9 +1203,7 @@
     </Run>
     <Run Id="bd_a7e0_c_shift_ram_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-2" ConstrsSet="bd_a7e0_c_shift_ram_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bd_a7e0_c_shift_ram_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1328,9 +1220,7 @@
     </Run>
     <Run Id="bd_a7e0_c_counter_binary_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-2" ConstrsSet="bd_a7e0_c_counter_binary_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bd_a7e0_c_counter_binary_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1347,9 +1237,7 @@
     </Run>
     <Run Id="bd_a7e0_mac_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-2" ConstrsSet="bd_a7e0_mac_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bd_a7e0_mac_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1366,9 +1254,7 @@
     </Run>
     <Run Id="bd_a7e0_eth_buf_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-2" ConstrsSet="bd_a7e0_eth_buf_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bd_a7e0_eth_buf_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

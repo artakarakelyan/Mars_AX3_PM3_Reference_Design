@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="bd_a7e0_c_counter_binary_0_0_synth_1" LaunchPart="xc7a100tcsg324-2" LaunchTime="1616259457">
   <File Type="PA-TCL" Name="bd_a7e0_c_counter_binary_0_0.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="bd_a7e0_c_counter_binary_0_0_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="bd_a7e0_c_counter_binary_0_0_reports.tcl"/>
   <File Type="RDS-RDS" Name="bd_a7e0_c_counter_binary_0_0.vds"/>
   <File Type="RDS-UTIL" Name="bd_a7e0_c_counter_binary_0_0_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="bd_a7e0_c_counter_binary_0_0_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="bd_a7e0_c_counter_binary_0_0.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="bd_a7e0_c_counter_binary_0_0_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="bd_a7e0_c_counter_binary_0_0_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bd_a7e0_c_counter_binary_0_0">
     <File Path="$PSRCDIR/sources_1/bd/Mars_AX3/ip/Mars_AX3_axi_ethernet_0/bd_0/ip/ip_3/bd_a7e0_c_counter_binary_0_0.xci">
       <FileInfo>
@@ -51,9 +48,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Sat Mar 20 21:21:13 2021
+| Date         : Sun Mar 21 00:12:43 2021
 | Host         : Artak-New running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file Mars_AX3_PM3_clock_utilization_routed.rpt
 | Design       : Mars_AX3_PM3
@@ -60,9 +60,9 @@ Table of Contents
 +-----------+-----------+-----------------+------------+----------------+--------------+-------------------+-------------+-----------------+--------------+--------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------+
 | Global Id | Source Id | Driver Type/Pin | Constraint | Site           | Clock Region | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock                                                        | Driver Pin                                                                                                      | Net                                                                                               |
 +-----------+-----------+-----------------+------------+----------------+--------------+-------------------+-------------+-----------------+--------------+--------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------+
-| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y16 | n/a          |                 6 |       10864 |               0 |       10.000 | Clk100                                                       | Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/gen_ui_extra_clocks.u_bufg_ui_addn_clk_1/O | Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/ui_addn_clk_1                |
+| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y16 | n/a          |                 4 |       10864 |               0 |       10.000 | Clk100                                                       | Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/gen_ui_extra_clocks.u_bufg_ui_addn_clk_1/O | Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/ui_addn_clk_1                |
 | g1        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y17 | n/a          |                 4 |        6547 |               0 |       10.000 | clk_pll_i                                                    | Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O                           | Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/CLK                          |
-| g2        | src1      | BUFGCTRL/O      | None       | BUFGCTRL_X0Y18 | n/a          |                 4 |        1746 |               0 |        8.000 | clkout0                                                      | Mars_AX3_i/Ethernet/axi_ethernet/U0/mac/U0/tri_mode_ethernet_mac_support_clocking_i/clkout1_buf/O               | Mars_AX3_i/Ethernet/axi_ethernet/U0/mac/U0/tri_mode_ethernet_mac_support_clocking_i/gtx_clk_out   |
+| g2        | src1      | BUFGCTRL/O      | None       | BUFGCTRL_X0Y18 | n/a          |                 2 |        1746 |               0 |        8.000 | clkout0                                                      | Mars_AX3_i/Ethernet/axi_ethernet/U0/mac/U0/tri_mode_ethernet_mac_support_clocking_i/clkout1_buf/O               | Mars_AX3_i/Ethernet/axi_ethernet/U0/mac/U0/tri_mode_ethernet_mac_support_clocking_i/gtx_clk_out   |
 | g3        | src2      | BUFR/O          | None       | BUFR_X0Y5      | X0Y1         |                 1 |        1446 |               0 |        8.000 | ETH_RXC                                                      | Mars_AX3_i/Ethernet/axi_ethernet/U0/mac/U0/tri_mode_ethernet_mac_i/rgmii_interface/bufr_rgmii_rx_clk/O          | Mars_AX3_i/Ethernet/axi_ethernet/U0/mac/U0/tri_mode_ethernet_mac_i/rgmii_interface/rgmii_rxc_0    |
 | g4        | src3      | BUFG/O          | None       | BUFGCTRL_X0Y0  | n/a          |                 1 |         250 |               0 |       33.333 | Mars_AX3_i/CPU/mdm_0/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/DRCK | Mars_AX3_i/CPU/mdm_0/U0/No_Dbg_Reg_Access.BUFG_DRCK/Using_FPGA.Native/O                                         | Mars_AX3_i/CPU/mdm_0/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0                                     |
 | g5        | src4      | BUFG/O          | None       | BUFGCTRL_X0Y1  | n/a          |                 3 |          85 |               0 |        8.000 | clk_out1_Mars_AX3_clk_wiz_0                                  | Mars_AX3_i/Ethernet/clk_wiz/inst/clkout1_buf/O                                                                  | Mars_AX3_i/Ethernet/clk_wiz/inst/clk_out1                                                         |
@@ -124,12 +124,12 @@ Table of Contents
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | X0Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  2600 |    0 |   600 |    0 |    20 |    0 |    10 |    0 |    20 |
 | X1Y0              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |  1500 |    0 |   550 |    0 |    40 |    0 |    20 |    0 |    40 |
-| X0Y1              |    9 |    12 |    1 |     4 |    0 |     2 |    1 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    9 |    50 |    6 |    50 | 2179 |  2000 |  606 |   600 |    0 |    20 |    2 |    10 |    0 |    20 |
-| X1Y1              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 2161 |  1900 |  753 |   650 |    0 |    60 |    0 |    30 |    0 |    40 |
-| X0Y2              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    4 |    50 | 5698 |  2000 | 2048 |   600 |    0 |    20 |    0 |    10 |    0 |    20 |
-| X1Y2              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 4230 |  1900 | 1613 |   650 |    1 |    60 |   11 |    30 |    0 |    40 |
-| X0Y3              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 4243 |  2600 | 1008 |   600 |    0 |    20 |    0 |    10 |    0 |    20 |
-| X1Y3              |    3 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     1 |    0 |     0 |    0 |     0 | 1291 |  1350 |  480 |   500 |    0 |    30 |    0 |    15 |    0 |    40 |
+| X0Y1              |    9 |    12 |    1 |     4 |    0 |     2 |    1 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    9 |    50 |    6 |    50 | 4234 |  2000 | 1258 |   600 |    0 |    20 |    2 |    10 |    0 |    20 |
+| X1Y1              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 3584 |  1900 | 1312 |   650 |    1 |    60 |    3 |    30 |    0 |    40 |
+| X0Y2              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    4 |    50 | 5419 |  2000 | 1901 |   600 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y2              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 3974 |  1900 | 1493 |   650 |    0 |    60 |    8 |    30 |    0 |    40 |
+| X0Y3              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 2279 |  2600 |  469 |   600 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y3              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     1 |    0 |     0 |    0 |     0 |  312 |  1350 |  117 |   500 |    0 |    30 |    0 |    15 |    0 |    40 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 * Global Clock column represents track count; while other columns represents cell counts
 
@@ -141,8 +141,8 @@ All Modules
 +----+----+----+
 |    | X0 | X1 |
 +----+----+----+
-| Y3 |  3 |  3 |
-| Y2 |  5 |  4 |
+| Y3 |  2 |  2 |
+| Y2 |  4 |  3 |
 | Y1 |  9 |  3 |
 | Y0 |  0 |  0 |
 +----+----+----+
@@ -165,9 +165,9 @@ All Modules
 +----+-------+-------+
 |    | X0    | X1    |
 +----+-------+-------+
-| Y3 |   174 |   151 |
-| Y2 |  4890 |  3741 |
-| Y1 |   349 |  1353 |
+| Y3 |     0 |     0 |
+| Y2 |  2883 |  3108 |
+| Y1 |  1779 |  2888 |
 | Y0 |     0 |     0 |
 +----+-------+-------+
 
@@ -186,14 +186,14 @@ All Modules
 **** GT Loads column represents load cell count of GT types
 
 
-+----+-------+-------+
-|    | X0    | X1    |
-+----+-------+-------+
-| Y3 |  4241 |  1144 |
-| Y2 |   797 |   231 |
-| Y1 |     0 |     0 |
-| Y0 |     0 |     0 |
-+----+-------+-------+
++----+-------+------+
+|    | X0    | X1   |
++----+-------+------+
+| Y3 |  2362 |  297 |
+| Y2 |  2912 |  842 |
+| Y1 |     0 |    0 |
+| Y0 |     0 |    0 |
++----+-------+------+
 
 
 9. Device Cell Placement Summary for Global Clock g2
@@ -210,14 +210,14 @@ All Modules
 **** GT Loads column represents load cell count of GT types
 
 
-+----+------+------+
-|    | X0   | X1   |
-+----+------+------+
-| Y3 |    0 |    0 |
-| Y2 |  405 |  202 |
-| Y1 |  331 |  736 |
-| Y0 |    0 |    0 |
-+----+------+------+
++----+-------+------+
+|    | X0    | X1   |
++----+-------+------+
+| Y3 |     0 |    0 |
+| Y2 |     0 |    0 |
+| Y1 |  1021 |  653 |
+| Y0 |     0 |    0 |
++----+-------+------+
 
 
 10. Device Cell Placement Summary for Global Clock g3
@@ -418,8 +418,8 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                               |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |         349 |               0 |  346 |      0 |    2 |   0 |  0 |    1 |   0 |       0 | Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/ui_addn_clk_1                |
-| g2        | n/a   | BUFGCTRL/O      | None       |         331 |               0 |  325 |      1 |    0 |   0 |  0 |    0 |   0 |       0 | Mars_AX3_i/Ethernet/axi_ethernet/U0/mac/U0/tri_mode_ethernet_mac_support_clocking_i/gtx_clk_out   |
+| g0        | n/a   | BUFG/O          | None       |        1779 |               0 | 1717 |     58 |    2 |   0 |  0 |    1 |   0 |       0 | Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/ui_addn_clk_1                |
+| g2        | n/a   | BUFGCTRL/O      | None       |        1021 |               0 | 1009 |      7 |    0 |   0 |  0 |    0 |   0 |       0 | Mars_AX3_i/Ethernet/axi_ethernet/U0/mac/U0/tri_mode_ethernet_mac_support_clocking_i/gtx_clk_out   |
 | g3        | n/a   | BUFR/O          | None       |        1438 |               0 | 1416 |     20 |    2 |   0 |  0 |    0 |   0 |       0 | Mars_AX3_i/Ethernet/axi_ethernet/U0/mac/U0/tri_mode_ethernet_mac_i/rgmii_interface/rgmii_rxc_0    |
 | g5        | n/a   | BUFG/O          | None       |          12 |               0 |   12 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | Mars_AX3_i/Ethernet/clk_wiz/inst/clk_out1                                                         |
 | g6        | n/a   | BUFGCTRL/O      | None       |          37 |               0 |   36 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | Mars_AX3_i/Ethernet/axi_ethernet/U0/mac/U0/tri_mode_ethernet_mac_support_clocking_i/gtx_clk90_out |
@@ -438,8 +438,8 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                             |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        1353 |               0 | 1353 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/ui_addn_clk_1              |
-| g2        | n/a   | BUFGCTRL/O      | None       |         736 |               0 |  736 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | Mars_AX3_i/Ethernet/axi_ethernet/U0/mac/U0/tri_mode_ethernet_mac_support_clocking_i/gtx_clk_out |
+| g0        | n/a   | BUFG/O          | None       |        2888 |               0 | 2861 |     20 |    4 |   0 |  0 |    0 |   0 |       0 | Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/ui_addn_clk_1              |
+| g2        | n/a   | BUFGCTRL/O      | None       |         653 |               0 |  651 |      0 |    2 |   0 |  0 |    0 |   0 |       0 | Mars_AX3_i/Ethernet/axi_ethernet/U0/mac/U0/tri_mode_ethernet_mac_support_clocking_i/gtx_clk_out |
 | g5        | n/a   | BUFG/O          | None       |          72 |               0 |   72 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | Mars_AX3_i/Ethernet/clk_wiz/inst/clk_out1                                                       |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
@@ -450,15 +450,14 @@ All Modules
 20. Clock Region Cell Placement per Global Clock: Region X0Y2
 -------------------------------------------------------------
 
-+-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------+
-| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                             |
-+-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        4890 |               0 | 4535 |    352 |    0 |   0 |  0 |    0 |   0 |       0 | Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/ui_addn_clk_1              |
-| g1        | n/a   | BUFG/O          | None       |         797 |               0 |  764 |      3 |    0 |   0 |  0 |    1 |   0 |       0 | Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/CLK                        |
-| g2        | n/a   | BUFGCTRL/O      | None       |         405 |               0 |  399 |      6 |    0 |   0 |  0 |    0 |   0 |       0 | Mars_AX3_i/Ethernet/axi_ethernet/U0/mac/U0/tri_mode_ethernet_mac_support_clocking_i/gtx_clk_out |
-| g7        | n/a   | BUFG/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/ui_addn_clk_2              |
-| g10       | n/a   | BUFH/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/pll_clk3                   |
-+-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------+
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------------------------+
+| g0        | n/a   | BUFG/O          | None       |        2883 |               0 | 2632 |    250 |    0 |   0 |  0 |    0 |   0 |       0 | Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/ui_addn_clk_1 |
+| g1        | n/a   | BUFG/O          | None       |        2912 |               0 | 2787 |     95 |    0 |   0 |  0 |    1 |   0 |       0 | Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/CLK           |
+| g7        | n/a   | BUFG/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/ui_addn_clk_2 |
+| g10       | n/a   | BUFH/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/pll_clk3      |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
@@ -467,14 +466,13 @@ All Modules
 21. Clock Region Cell Placement per Global Clock: Region X1Y2
 -------------------------------------------------------------
 
-+-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------+
-| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                             |
-+-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        3741 |               0 | 3597 |    130 |   12 |   0 |  0 |    0 |   0 |       0 | Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/ui_addn_clk_1              |
-| g1        | n/a   | BUFG/O          | None       |         231 |               0 |  207 |     24 |    0 |   0 |  0 |    0 |   0 |       0 | Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/CLK                        |
-| g2        | n/a   | BUFGCTRL/O      | None       |         202 |               0 |  200 |      0 |    2 |   0 |  0 |    0 |   0 |       0 | Mars_AX3_i/Ethernet/axi_ethernet/U0/mac/U0/tri_mode_ethernet_mac_support_clocking_i/gtx_clk_out |
-| g4        | n/a   | BUFG/O          | None       |         250 |               0 |  226 |     24 |    0 |   0 |  0 |    0 |   0 |       0 | Mars_AX3_i/CPU/mdm_0/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0                                   |
-+-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------------+
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------------------------+
+| g0        | n/a   | BUFG/O          | None       |        3108 |               0 | 2946 |    154 |    8 |   0 |  0 |    0 |   0 |       0 | Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/ui_addn_clk_1 |
+| g1        | n/a   | BUFG/O          | None       |         842 |               0 |  802 |     40 |    0 |   0 |  0 |    0 |   0 |       0 | Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/CLK           |
+| g4        | n/a   | BUFG/O          | None       |         250 |               0 |  226 |     24 |    0 |   0 |  0 |    0 |   0 |       0 | Mars_AX3_i/CPU/mdm_0/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0                      |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
@@ -483,13 +481,12 @@ All Modules
 22. Clock Region Cell Placement per Global Clock: Region X0Y3
 -------------------------------------------------------------
 
-+-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------------------------+
-| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                |
-+-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |         174 |               0 |  174 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/ui_addn_clk_1 |
-| g1        | n/a   | BUFG/O          | None       |        4241 |               0 | 4069 |    172 |    0 |   0 |  0 |    0 |   0 |       0 | Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/CLK           |
-| g5        | n/a   | BUFG/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | Mars_AX3_i/Ethernet/clk_wiz/inst/clk_out1                                          |
-+-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------------------------+
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                      |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------------------------+
+| g1        | n/a   | BUFG/O          | None       |        2362 |               0 | 2279 |     83 |    0 |   0 |  0 |    0 |   0 |       0 | Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/CLK |
+| g5        | n/a   | BUFG/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | Mars_AX3_i/Ethernet/clk_wiz/inst/clk_out1                                |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
@@ -498,13 +495,12 @@ All Modules
 23. Clock Region Cell Placement per Global Clock: Region X1Y3
 -------------------------------------------------------------
 
-+-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------------------------+
-| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                |
-+-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |         151 |               0 |  151 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/ui_addn_clk_1 |
-| g1        | n/a   | BUFG/O          | None       |        1144 |               0 | 1125 |     19 |    0 |   0 |  0 |    0 |   0 |       0 | Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/CLK           |
-| g7        | n/a   | BUFG/O          | None       |          15 |               0 |   15 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/ui_addn_clk_2 |
-+-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------------------------+
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------------------------+
+| g1        | n/a   | BUFG/O          | None       |         297 |               0 | 297 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/CLK           |
+| g7        | n/a   | BUFG/O          | None       |          15 |               0 |  15 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/ui_addn_clk_2 |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
@@ -548,7 +544,7 @@ resize_pblock [get_pblocks {CLKAG_Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig
 #startgroup
 create_pblock {CLKAG_Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/ui_addn_clk_1}
 add_cells_to_pblock [get_pblocks  {CLKAG_Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/ui_addn_clk_1}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL && NAME!=Mars_AX3_i/Ethernet/clk_wiz/inst/mmcm_adv_inst} -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/ui_addn_clk_1"}]]]
-resize_pblock [get_pblocks {CLKAG_Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/ui_addn_clk_1}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+resize_pblock [get_pblocks {CLKAG_Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/ui_addn_clk_1}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
 #endgroup
 
 # Clock net "Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/ui_addn_clk_0" driven by instance "Mars_AX3_i/Memory/SDRAM/u_Mars_AX3_SDRAM_0_mig/u_ddr3_infrastructure/gen_ui_extra_clocks.u_bufg_ui_addn_clk_0" located at site "BUFGCTRL_X0Y21"
@@ -576,7 +572,7 @@ resize_pblock [get_pblocks {CLKAG_Mars_AX3_i/Ethernet/clk_wiz/inst/clk_out1}] -a
 #startgroup
 create_pblock {CLKAG_Mars_AX3_i/Ethernet/axi_ethernet/U0/mac/U0/tri_mode_ethernet_mac_support_clocking_i/gtx_clk_out}
 add_cells_to_pblock [get_pblocks  {CLKAG_Mars_AX3_i/Ethernet/axi_ethernet/U0/mac/U0/tri_mode_ethernet_mac_support_clocking_i/gtx_clk_out}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="Mars_AX3_i/Ethernet/axi_ethernet/U0/mac/U0/tri_mode_ethernet_mac_support_clocking_i/gtx_clk_out"}]]]
-resize_pblock [get_pblocks {CLKAG_Mars_AX3_i/Ethernet/axi_ethernet/U0/mac/U0/tri_mode_ethernet_mac_support_clocking_i/gtx_clk_out}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+resize_pblock [get_pblocks {CLKAG_Mars_AX3_i/Ethernet/axi_ethernet/U0/mac/U0/tri_mode_ethernet_mac_support_clocking_i/gtx_clk_out}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
 #endgroup
 
 # Clock net "Mars_AX3_i/Ethernet/axi_ethernet/U0/mac/U0/tri_mode_ethernet_mac_support_clocking_i/gtx_clk90_out" driven by instance "Mars_AX3_i/Ethernet/axi_ethernet/U0/mac/U0/tri_mode_ethernet_mac_support_clocking_i/clkout2_buf" located at site "BUFGCTRL_X0Y19"

@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="Mars_AX3_auto_cc_0_synth_1" LaunchPart="xc7a100tcsg324-2" LaunchTime="1616259452">
   <File Type="PA-TCL" Name="Mars_AX3_auto_cc_0.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="Mars_AX3_auto_cc_0_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Mars_AX3_auto_cc_0_reports.tcl"/>
   <File Type="RDS-RDS" Name="Mars_AX3_auto_cc_0.vds"/>
   <File Type="RDS-UTIL" Name="Mars_AX3_auto_cc_0_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Mars_AX3_auto_cc_0_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Mars_AX3_auto_cc_0.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Mars_AX3_auto_cc_0_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="Mars_AX3_auto_cc_0_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Mars_AX3_auto_cc_0">
     <File Path="$PSRCDIR/sources_1/bd/Mars_AX3/ip/Mars_AX3_auto_cc_0/Mars_AX3_auto_cc_0.xci">
       <FileInfo>
@@ -51,9 +48,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>
