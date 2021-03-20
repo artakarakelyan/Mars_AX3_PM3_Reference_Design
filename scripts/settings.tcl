@@ -30,7 +30,7 @@
 
 # ----------------------------------------------------------------------------------
 # Modify this variable to select your module
-if {![info exists module_name]} {set module_name MA-AX3-35-1I-D8}
+if {![info exists module_name]} {set module_name MA-AX3-100-2I-D8}
 if {![info exists baseboard]}   {set baseboard PM3}
 # ----------------------------------------------------------------------------------
 

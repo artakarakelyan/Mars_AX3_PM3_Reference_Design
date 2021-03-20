@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Mar 20 21:01:12 2021
+# Process ID: 36124
+# Current directory: F:/GitHub/Mars_AX3_PM3_Reference_Design/Vivado/MA-AX3-100-2I-D8/Mars_AX3_PM3.runs/Mars_AX3_ilmb_v10_0_synth_1
+# Command line: vivado.exe -log Mars_AX3_ilmb_v10_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Mars_AX3_ilmb_v10_0.tcl
+# Log file: F:/GitHub/Mars_AX3_PM3_Reference_Design/Vivado/MA-AX3-100-2I-D8/Mars_AX3_PM3.runs/Mars_AX3_ilmb_v10_0_synth_1/Mars_AX3_ilmb_v10_0.vds
+# Journal file: F:/GitHub/Mars_AX3_PM3_Reference_Design/Vivado/MA-AX3-100-2I-D8/Mars_AX3_PM3.runs/Mars_AX3_ilmb_v10_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Mars_AX3_ilmb_v10_0.tcl -notrace

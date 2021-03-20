@@ -1,0 +1,4 @@
+SET_ERROR_CODE 0
+SET_XMDF_PATH ./Mars_AX3_SDRAM_0_xmdf.tcl
+SET_PARAMETER component_name Mars_AX3_SDRAM_0
+SET_PARAMETER xml_input_file  ./Mars_AX3_SDRAM_0/mig.prj
