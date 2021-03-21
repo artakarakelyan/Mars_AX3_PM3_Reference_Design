@@ -1,31 +1,49 @@
-23:05:26 INFO  : Launching XSCT server: xsct.bat -n  -interactive F:\GitHub\Mars_AX3_PM3_Reference_Design\Workspace\temp_xsdb_launch_script.tcl
-23:05:27 INFO  : Registering command handlers for Vitis TCF services
-23:05:30 INFO  : Platform repository initialization has completed.
-23:05:30 INFO  : XSCT server has started successfully.
-23:05:31 INFO  : Successfully done setting XSCT server connection channel  
-23:05:33 INFO  : plnx-install-location is set to ''
-23:05:33 INFO  : Successfully done setting workspace for the tool. 
-23:05:33 INFO  : Successfully done query RDI_DATADIR 
-23:06:48 INFO  : Result from executing command 'getProjects': Hello
-23:06:48 INFO  : Result from executing command 'getPlatforms': 
-23:07:15 INFO  : Result from executing command 'getProjects': Hello
-23:07:15 INFO  : Result from executing command 'getPlatforms': Hello|F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/Hello/export/Hello/Hello.xpfm
-23:09:38 INFO  : Checking for BSP changes to sync application flags for project 'HelloWorld'...
-23:12:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-23:12:09 INFO  : Jtag cable 'Digilent JTAG-HS3 210299AFBB0C' is selected.
-23:12:09 INFO  : 'jtag frequency' command is executed.
-23:12:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS3 210299AFBB0C" && level==0 && jtag_device_ctx=="jsn-JTAG-HS3-210299AFBB0C-13631093-0"}' command is executed.
-23:12:12 INFO  : FPGA configured successfully with bitstream "F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/_ide/bitstream/Mars_AX3_PM3.bit"
-23:12:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-23:12:12 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
-23:12:12 INFO  : Hardware design and registers information is loaded from 'F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/Hello/export/Hello/hw/Mars_AX3_PM3.xsa'.
-23:12:12 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
-23:12:12 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
-23:12:12 INFO  : System reset is completed.
-23:12:15 INFO  : 'after 3000' command is executed.
-23:12:15 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
-23:12:15 INFO  : The application 'F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/Debug/HelloWorld.elf' is downloaded to processor 'CPU_microblaze_CPU'.
-23:12:15 INFO  : ----------------XSDB Script----------------
+10:31:29 INFO  : Launching XSCT server: xsct.bat -n  -interactive F:\GitHub\Mars_AX3_PM3_Reference_Design\Workspace\temp_xsdb_launch_script.tcl
+10:31:32 INFO  : Platform repository initialization has completed.
+10:31:32 INFO  : XSCT server has started successfully.
+10:31:33 INFO  : Successfully done setting XSCT server connection channel  
+10:31:33 INFO  : plnx-install-location is set to ''
+10:31:33 INFO  : Successfully done query RDI_DATADIR 
+10:31:33 INFO  : Successfully done setting workspace for the tool. 
+10:32:43 INFO  : Launching XSCT server: xsct.bat -n  -interactive F:\GitHub\Mars_AX3_PM3_Reference_Design\Workspace\temp_xsdb_launch_script.tcl
+10:32:43 INFO  : Registering command handlers for Vitis TCF services
+10:32:45 INFO  : Platform repository initialization has completed.
+10:32:46 INFO  : XSCT server has started successfully.
+10:32:46 INFO  : plnx-install-location is set to ''
+10:32:46 INFO  : Successfully done setting XSCT server connection channel  
+10:32:46 INFO  : Successfully done setting workspace for the tool. 
+10:32:46 INFO  : Successfully done query RDI_DATADIR 
+10:34:46 INFO  : Result from executing command 'getProjects': Hello
+10:34:46 INFO  : Result from executing command 'getPlatforms': 
+10:35:09 INFO  : Result from executing command 'getProjects': Hello
+10:35:09 INFO  : Result from executing command 'getPlatforms': Hello|F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/Hello/export/Hello/Hello.xpfm
+10:35:59 INFO  : Checking for BSP changes to sync application flags for project 'HelloWorld'...
+10:36:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:37:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+10:37:02 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+10:37:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:37:37 INFO  : Jtag cable 'Digilent JTAG-HS3 210299AFBB0C' is selected.
+10:37:37 INFO  : 'jtag frequency' command is executed.
+10:37:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS3 210299AFBB0C" && level==0 && jtag_device_ctx=="jsn-JTAG-HS3-210299AFBB0C-13631093-0"}' command is executed.
+10:37:39 INFO  : FPGA configured successfully with bitstream "F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/_ide/bitstream/Mars_AX3_PM3.bit"
+10:37:39 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
+10:37:40 INFO  : Hardware design and registers information is loaded from 'F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/Hello/export/Hello/hw/Mars_AX3_PM3.xsa'.
+10:37:40 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:37:40 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
+10:37:40 INFO  : System reset is completed.
+10:37:43 INFO  : 'after 3000' command is executed.
+10:37:43 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
+10:37:43 INFO  : The application 'F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/Debug/HelloWorld.elf' is downloaded to processor 'CPU_microblaze_CPU'.
+10:37:43 INFO  : ----------------XSDB Script----------------
 connect -url tcp:127.0.0.1:3121
 targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS3 210299AFBB0C" && level==0 && jtag_device_ctx=="jsn-JTAG-HS3-210299AFBB0C-13631093-0"}
 fpga -file F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/_ide/bitstream/Mars_AX3_PM3.bit
@@ -39,269 +57,11 @@ targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
 dow F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/Debug/HelloWorld.elf
 ----------------End of Script----------------
 
-23:12:15 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
-23:12:15 INFO  : 'con' command is executed.
-23:12:15 INFO  : ----------------XSDB Script (After Launch)----------------
+10:37:43 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
+10:37:43 INFO  : 'con' command is executed.
+10:37:43 INFO  : ----------------XSDB Script (After Launch)----------------
 targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
 con
 ----------------End of Script----------------
 
-23:12:16 INFO  : Launch script is exported to file 'F:\GitHub\Mars_AX3_PM3_Reference_Design\Workspace\.sdk\launch_scripts\single_application_debug\debugger_helloworld-default.tcl'
-23:12:16 INFO  : Jtag cable 'Digilent JTAG-HS3 210299AFBB0C' is selected.
-23:12:16 INFO  : 'jtag frequency' command is executed.
-23:12:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS3 210299AFBB0C" && level==0 && jtag_device_ctx=="jsn-JTAG-HS3-210299AFBB0C-13631093-0"}' command is executed.
-23:12:18 INFO  : FPGA configured successfully with bitstream "F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/_ide/bitstream/Mars_AX3_PM3.bit"
-23:12:18 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
-23:12:18 INFO  : Hardware design and registers information is loaded from 'F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/Hello/export/Hello/hw/Mars_AX3_PM3.xsa'.
-23:12:18 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
-23:12:18 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
-23:12:18 INFO  : System reset is completed.
-23:12:21 INFO  : 'after 3000' command is executed.
-23:12:21 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
-23:12:21 INFO  : The application 'F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/Debug/HelloWorld.elf' is downloaded to processor 'CPU_microblaze_CPU'.
-23:12:21 INFO  : ----------------XSDB Script----------------
-connect -url tcp:127.0.0.1:3121
-targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS3 210299AFBB0C" && level==0 && jtag_device_ctx=="jsn-JTAG-HS3-210299AFBB0C-13631093-0"}
-fpga -file F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/_ide/bitstream/Mars_AX3_PM3.bit
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-loadhw -hw F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/Hello/export/Hello/hw/Mars_AX3_PM3.xsa -regs
-configparams mdm-detect-bscan-mask 2
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-rst -system
-after 3000
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-dow F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/Debug/HelloWorld.elf
-----------------End of Script----------------
-
-23:12:21 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
-23:12:21 INFO  : 'con' command is executed.
-23:12:21 INFO  : ----------------XSDB Script (After Launch)----------------
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-con
-----------------End of Script----------------
-
-23:12:21 INFO  : Launch script is exported to file 'F:\GitHub\Mars_AX3_PM3_Reference_Design\Workspace\.sdk\launch_scripts\single_application_debug\debugger_helloworld-default.tcl'
-23:12:30 INFO  : Disconnected from the channel tcfchan#2.
-23:12:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-23:12:31 INFO  : Jtag cable 'Digilent JTAG-HS3 210299AFBB0C' is selected.
-23:12:31 INFO  : 'jtag frequency' command is executed.
-23:12:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS3 210299AFBB0C" && level==0 && jtag_device_ctx=="jsn-JTAG-HS3-210299AFBB0C-13631093-0"}' command is executed.
-23:12:33 INFO  : FPGA configured successfully with bitstream "F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/_ide/bitstream/Mars_AX3_PM3.bit"
-23:12:33 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
-23:12:33 INFO  : Hardware design and registers information is loaded from 'F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/Hello/export/Hello/hw/Mars_AX3_PM3.xsa'.
-23:12:33 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
-23:12:33 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
-23:12:33 INFO  : System reset is completed.
-23:12:36 INFO  : 'after 3000' command is executed.
-23:12:36 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
-23:12:36 INFO  : The application 'F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/Debug/HelloWorld.elf' is downloaded to processor 'CPU_microblaze_CPU'.
-23:12:36 INFO  : ----------------XSDB Script----------------
-connect -url tcp:127.0.0.1:3121
-targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS3 210299AFBB0C" && level==0 && jtag_device_ctx=="jsn-JTAG-HS3-210299AFBB0C-13631093-0"}
-fpga -file F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/_ide/bitstream/Mars_AX3_PM3.bit
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-loadhw -hw F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/Hello/export/Hello/hw/Mars_AX3_PM3.xsa -regs
-configparams mdm-detect-bscan-mask 2
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-rst -system
-after 3000
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-dow F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/Debug/HelloWorld.elf
-----------------End of Script----------------
-
-23:12:37 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
-23:12:37 INFO  : 'con' command is executed.
-23:12:37 INFO  : ----------------XSDB Script (After Launch)----------------
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-con
-----------------End of Script----------------
-
-23:12:37 INFO  : Launch script is exported to file 'F:\GitHub\Mars_AX3_PM3_Reference_Design\Workspace\.sdk\launch_scripts\single_application_debug\debugger_helloworld-default.tcl'
-23:17:55 INFO  : Disconnected from the channel tcfchan#3.
-23:17:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-23:17:56 INFO  : Jtag cable 'Digilent JTAG-HS3 210299AFBB0C' is selected.
-23:17:56 INFO  : 'jtag frequency' command is executed.
-23:17:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS3 210299AFBB0C" && level==0 && jtag_device_ctx=="jsn-JTAG-HS3-210299AFBB0C-13631093-0"}' command is executed.
-23:17:58 INFO  : FPGA configured successfully with bitstream "F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/_ide/bitstream/Mars_AX3_PM3.bit"
-23:17:58 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
-23:17:58 INFO  : Hardware design and registers information is loaded from 'F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/Hello/export/Hello/hw/Mars_AX3_PM3.xsa'.
-23:17:58 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
-23:17:58 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
-23:17:58 INFO  : System reset is completed.
-23:18:01 INFO  : 'after 3000' command is executed.
-23:18:01 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
-23:18:01 INFO  : The application 'F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/Debug/HelloWorld.elf' is downloaded to processor 'CPU_microblaze_CPU'.
-23:18:01 INFO  : ----------------XSDB Script----------------
-connect -url tcp:127.0.0.1:3121
-targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS3 210299AFBB0C" && level==0 && jtag_device_ctx=="jsn-JTAG-HS3-210299AFBB0C-13631093-0"}
-fpga -file F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/_ide/bitstream/Mars_AX3_PM3.bit
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-loadhw -hw F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/Hello/export/Hello/hw/Mars_AX3_PM3.xsa -regs
-configparams mdm-detect-bscan-mask 2
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-rst -system
-after 3000
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-dow F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/Debug/HelloWorld.elf
-----------------End of Script----------------
-
-23:18:02 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
-23:18:02 INFO  : 'con' command is executed.
-23:18:02 INFO  : ----------------XSDB Script (After Launch)----------------
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-con
-----------------End of Script----------------
-
-23:18:02 INFO  : Launch script is exported to file 'F:\GitHub\Mars_AX3_PM3_Reference_Design\Workspace\.sdk\launch_scripts\single_application_debug\debugger_helloworld-default.tcl'
-00:15:56 INFO  : Hardware specification for platform project 'Hello' is updated.
-00:16:07 INFO  : Result from executing command 'getProjects': Hello
-00:16:07 INFO  : Result from executing command 'getPlatforms': Hello|F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/Hello/export/Hello/Hello.xpfm
-00:16:25 INFO  : Checking for BSP changes to sync application flags for project 'HelloWorld'...
-00:16:50 INFO  : Disconnected from the channel tcfchan#4.
-00:16:51 INFO  : The hardware specfication used by project 'HelloWorld' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
-00:16:51 INFO  : The file 'F:\GitHub\Mars_AX3_PM3_Reference_Design\Workspace\HelloWorld\_ide\bitstream\Mars_AX3_PM3.bit' stored in project is removed.
-00:16:51 INFO  : The file 'F:\GitHub\Mars_AX3_PM3_Reference_Design\Workspace\HelloWorld\_ide\bitstream\Mars_AX3_PM3.mmi' stored in project is removed.
-00:16:51 INFO  : The updated bitstream files are copied from platform to folder 'F:\GitHub\Mars_AX3_PM3_Reference_Design\Workspace\HelloWorld\_ide\bitstream' in project 'HelloWorld'.
-00:16:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-00:16:51 INFO  : Jtag cable 'Digilent JTAG-HS3 210299AFBB0C' is selected.
-00:16:51 INFO  : 'jtag frequency' command is executed.
-00:16:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS3 210299AFBB0C" && level==0 && jtag_device_ctx=="jsn-JTAG-HS3-210299AFBB0C-13631093-0"}' command is executed.
-00:16:54 INFO  : FPGA configured successfully with bitstream "F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/_ide/bitstream/Mars_AX3_PM3.bit"
-00:16:54 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
-00:16:54 INFO  : Hardware design and registers information is loaded from 'F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/Hello/export/Hello/hw/Mars_AX3_PM3.xsa'.
-00:16:54 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
-00:16:54 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
-00:16:54 INFO  : System reset is completed.
-00:16:57 INFO  : 'after 3000' command is executed.
-00:16:57 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
-00:16:57 INFO  : The application 'F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/Debug/HelloWorld.elf' is downloaded to processor 'CPU_microblaze_CPU'.
-00:16:57 INFO  : ----------------XSDB Script----------------
-connect -url tcp:127.0.0.1:3121
-targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS3 210299AFBB0C" && level==0 && jtag_device_ctx=="jsn-JTAG-HS3-210299AFBB0C-13631093-0"}
-fpga -file F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/_ide/bitstream/Mars_AX3_PM3.bit
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-loadhw -hw F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/Hello/export/Hello/hw/Mars_AX3_PM3.xsa -regs
-configparams mdm-detect-bscan-mask 2
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-rst -system
-after 3000
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-dow F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/Debug/HelloWorld.elf
-----------------End of Script----------------
-
-00:16:57 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
-00:16:57 INFO  : 'con' command is executed.
-00:16:57 INFO  : ----------------XSDB Script (After Launch)----------------
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-con
-----------------End of Script----------------
-
-00:16:57 INFO  : Launch script is exported to file 'F:\GitHub\Mars_AX3_PM3_Reference_Design\Workspace\.sdk\launch_scripts\single_application_debug\debugger_helloworld-default.tcl'
-00:17:03 INFO  : Disconnected from the channel tcfchan#6.
-00:17:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-00:17:05 INFO  : Jtag cable 'Digilent JTAG-HS3 210299AFBB0C' is selected.
-00:17:05 INFO  : 'jtag frequency' command is executed.
-00:17:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS3 210299AFBB0C" && level==0 && jtag_device_ctx=="jsn-JTAG-HS3-210299AFBB0C-13631093-0"}' command is executed.
-00:17:07 INFO  : FPGA configured successfully with bitstream "F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/_ide/bitstream/Mars_AX3_PM3.bit"
-00:17:07 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
-00:17:07 INFO  : Hardware design and registers information is loaded from 'F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/Hello/export/Hello/hw/Mars_AX3_PM3.xsa'.
-00:17:07 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
-00:17:07 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
-00:17:07 INFO  : System reset is completed.
-00:17:10 INFO  : 'after 3000' command is executed.
-00:17:10 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
-00:17:10 INFO  : The application 'F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/Debug/HelloWorld.elf' is downloaded to processor 'CPU_microblaze_CPU'.
-00:17:10 INFO  : ----------------XSDB Script----------------
-connect -url tcp:127.0.0.1:3121
-targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS3 210299AFBB0C" && level==0 && jtag_device_ctx=="jsn-JTAG-HS3-210299AFBB0C-13631093-0"}
-fpga -file F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/_ide/bitstream/Mars_AX3_PM3.bit
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-loadhw -hw F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/Hello/export/Hello/hw/Mars_AX3_PM3.xsa -regs
-configparams mdm-detect-bscan-mask 2
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-rst -system
-after 3000
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-dow F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/Debug/HelloWorld.elf
-----------------End of Script----------------
-
-00:17:10 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
-00:17:10 INFO  : 'con' command is executed.
-00:17:10 INFO  : ----------------XSDB Script (After Launch)----------------
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-con
-----------------End of Script----------------
-
-00:17:10 INFO  : Launch script is exported to file 'F:\GitHub\Mars_AX3_PM3_Reference_Design\Workspace\.sdk\launch_scripts\single_application_debug\debugger_helloworld-default.tcl'
-00:17:40 INFO  : Disconnected from the channel tcfchan#7.
-00:17:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-00:17:41 INFO  : Jtag cable 'Digilent JTAG-HS3 210299AFBB0C' is selected.
-00:17:41 INFO  : 'jtag frequency' command is executed.
-00:17:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS3 210299AFBB0C" && level==0 && jtag_device_ctx=="jsn-JTAG-HS3-210299AFBB0C-13631093-0"}' command is executed.
-00:17:43 INFO  : FPGA configured successfully with bitstream "F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/_ide/bitstream/Mars_AX3_PM3.bit"
-00:17:43 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
-00:17:43 INFO  : Hardware design and registers information is loaded from 'F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/Hello/export/Hello/hw/Mars_AX3_PM3.xsa'.
-00:17:43 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
-00:17:43 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
-00:17:43 INFO  : System reset is completed.
-00:17:46 INFO  : 'after 3000' command is executed.
-00:17:47 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
-00:17:47 INFO  : The application 'F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/Debug/HelloWorld.elf' is downloaded to processor 'CPU_microblaze_CPU'.
-00:17:47 INFO  : ----------------XSDB Script----------------
-connect -url tcp:127.0.0.1:3121
-targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS3 210299AFBB0C" && level==0 && jtag_device_ctx=="jsn-JTAG-HS3-210299AFBB0C-13631093-0"}
-fpga -file F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/_ide/bitstream/Mars_AX3_PM3.bit
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-loadhw -hw F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/Hello/export/Hello/hw/Mars_AX3_PM3.xsa -regs
-configparams mdm-detect-bscan-mask 2
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-rst -system
-after 3000
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-dow F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/Debug/HelloWorld.elf
-----------------End of Script----------------
-
-00:17:47 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
-00:17:47 INFO  : 'con' command is executed.
-00:17:47 INFO  : ----------------XSDB Script (After Launch)----------------
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-con
-----------------End of Script----------------
-
-00:17:47 INFO  : Launch script is exported to file 'F:\GitHub\Mars_AX3_PM3_Reference_Design\Workspace\.sdk\launch_scripts\single_application_debug\debugger_helloworld-default.tcl'
-00:18:09 INFO  : Disconnected from the channel tcfchan#8.
-00:18:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-00:18:11 INFO  : Jtag cable 'Digilent JTAG-HS3 210299AFBB0C' is selected.
-00:18:11 INFO  : 'jtag frequency' command is executed.
-00:18:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS3 210299AFBB0C" && level==0 && jtag_device_ctx=="jsn-JTAG-HS3-210299AFBB0C-13631093-0"}' command is executed.
-00:18:13 INFO  : FPGA configured successfully with bitstream "F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/_ide/bitstream/Mars_AX3_PM3.bit"
-00:18:13 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
-00:18:13 INFO  : Hardware design and registers information is loaded from 'F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/Hello/export/Hello/hw/Mars_AX3_PM3.xsa'.
-00:18:13 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
-00:18:13 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
-00:18:13 INFO  : System reset is completed.
-00:18:16 INFO  : 'after 3000' command is executed.
-00:18:16 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
-00:18:16 INFO  : The application 'F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/Debug/HelloWorld.elf' is downloaded to processor 'CPU_microblaze_CPU'.
-00:18:16 INFO  : ----------------XSDB Script----------------
-connect -url tcp:127.0.0.1:3121
-targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS3 210299AFBB0C" && level==0 && jtag_device_ctx=="jsn-JTAG-HS3-210299AFBB0C-13631093-0"}
-fpga -file F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/_ide/bitstream/Mars_AX3_PM3.bit
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-loadhw -hw F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/Hello/export/Hello/hw/Mars_AX3_PM3.xsa -regs
-configparams mdm-detect-bscan-mask 2
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-rst -system
-after 3000
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-dow F:/GitHub/Mars_AX3_PM3_Reference_Design/Workspace/HelloWorld/Debug/HelloWorld.elf
-----------------End of Script----------------
-
-00:18:16 INFO  : Context for processor 'CPU_microblaze_CPU' is selected.
-00:18:16 INFO  : 'con' command is executed.
-00:18:16 INFO  : ----------------XSDB Script (After Launch)----------------
-targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
-con
-----------------End of Script----------------
-
-00:18:16 INFO  : Launch script is exported to file 'F:\GitHub\Mars_AX3_PM3_Reference_Design\Workspace\.sdk\launch_scripts\single_application_debug\debugger_helloworld-default.tcl'
+10:37:43 INFO  : Launch script is exported to file 'F:\GitHub\Mars_AX3_PM3_Reference_Design\Workspace\.sdk\launch_scripts\single_application_debug\debugger_helloworld-default.tcl'

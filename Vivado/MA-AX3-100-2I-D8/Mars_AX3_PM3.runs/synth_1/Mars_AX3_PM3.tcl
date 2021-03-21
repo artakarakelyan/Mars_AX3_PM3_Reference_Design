@@ -70,7 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param synth.incrementalSynthesisCache C:/Users/Artak/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-25544-Artak-New/incrSyn
+set_param synth.incrementalSynthesisCache C:/Users/Artak/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-36968-Artak-New/incrSyn
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
