@@ -1,5 +1,5 @@
 # ----------------------------------------------------------------------------------
-# Copyright (c) 2020 by Enclustra GmbH, Switzerland.
+# Copyright (c) 2021 by Enclustra GmbH, Switzerland.
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy of
 # this hardware, software, firmware, and associated documentation files (the
@@ -62,20 +62,20 @@ set_property -dict [ list \
   CONFIG.CHANNEL_ENABLE_VP_VN {false} \
 ] [get_bd_cells xadc_wiz_0]
 
-if { $ETH == "Gig_Eth"} {
+if { $ETH == "ETH"} {
   set_property -dict [ list \
     CONFIG.NUM_PORTS {10} \
   ] [get_bd_cells microblaze_xlconcat]
 }
 
-if { $ETH == "Gig_Eth"} {
+if { $ETH == "ETH"} {
   set_property -dict [ list \
     CONFIG.NUM_MI {11} \
     CONFIG.NUM_SI {1} \
   ] [get_bd_cells interconnect_CPU]
 }
 
-if { $ETH == "Gig_Eth"} {
+if { $ETH == "ETH"} {
   create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma axi_dma
   set_property -dict [ list \
     CONFIG.c_sg_length_width {16} \
@@ -85,7 +85,7 @@ if { $ETH == "Gig_Eth"} {
   ] [get_bd_cells axi_dma]
 }
 
-if { $ETH == "Gig_Eth"} {
+if { $ETH == "ETH"} {
   create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz clk_wiz
   set_property -dict [ list \
     CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {125.000} \
@@ -129,13 +129,13 @@ set_property -dict [ list \
   CONFIG.XML_INPUT_FILE {mig.prj} \
 ] [get_bd_cells SDRAM]
 
-if { $ETH == "Gig_Eth"} {
+if { $ETH == "ETH"} {
   set_property -dict [ list \
     CONFIG.NUM_SI {5} \
   ] [get_bd_cells interconnect_DDR]
 }
 
-if { $ETH == "Gig_Eth"} {
+if { $ETH == "ETH"} {
   create_bd_cell -type ip -vlnv xilinx.com:ip:axi_ethernet axi_ethernet
   set_property -dict [ list \
     CONFIG.PHY_TYPE {RGMII} \
@@ -174,8 +174,6 @@ connect_bd_net [get_bd_pins CPU/Clk] [get_bd_pins CPU/interconnect_CPU/M05_ACLK]
 connect_bd_net [get_bd_pins CPU/Clk] [get_bd_pins CPU/interconnect_CPU/M06_ACLK]
 connect_bd_net [get_bd_pins CPU/Clk] [get_bd_pins CPU/interconnect_CPU/M07_ACLK]
 connect_bd_net [get_bd_pins CPU/Clk] [get_bd_pins CPU/interconnect_CPU/M08_ACLK]
-connect_bd_net [get_bd_pins CPU/Clk] [get_bd_pins CPU/interconnect_CPU/M09_ACLK]
-connect_bd_net [get_bd_pins CPU/Clk] [get_bd_pins CPU/interconnect_CPU/M10_ACLK]
 create_bd_pin -dir I -type rst /CPU/S_AXI_ARESETN
 connect_bd_net [get_bd_pins CPU/S_AXI_ARESETN] [get_bd_pins CPU/mdm_0/S_AXI_ARESETN]
 connect_bd_net [get_bd_pins CPU/S_AXI_ARESETN] [get_bd_pins CPU/microblaze_axi_intc/s_axi_aresetn]
@@ -190,8 +188,6 @@ connect_bd_net [get_bd_pins CPU/S_AXI_ARESETN] [get_bd_pins CPU/interconnect_CPU
 connect_bd_net [get_bd_pins CPU/S_AXI_ARESETN] [get_bd_pins CPU/interconnect_CPU/M06_ARESETN]
 connect_bd_net [get_bd_pins CPU/S_AXI_ARESETN] [get_bd_pins CPU/interconnect_CPU/M07_ARESETN]
 connect_bd_net [get_bd_pins CPU/S_AXI_ARESETN] [get_bd_pins CPU/interconnect_CPU/M08_ARESETN]
-connect_bd_net [get_bd_pins CPU/S_AXI_ARESETN] [get_bd_pins CPU/interconnect_CPU/M09_ARESETN]
-connect_bd_net [get_bd_pins CPU/S_AXI_ARESETN] [get_bd_pins CPU/interconnect_CPU/M10_ARESETN]
 connect_bd_intf_net [get_bd_intf_pins CPU/mdm_0/S_AXI] [get_bd_intf_pins CPU/interconnect_CPU/M00_AXI]
 connect_bd_intf_net [get_bd_intf_pins CPU/microblaze_CPU/M_AXI_DP] [get_bd_intf_pins CPU/interconnect_CPU/S00_AXI]
 connect_bd_intf_net [get_bd_intf_pins CPU/mdm_0/MBDEBUG_0] [get_bd_intf_pins CPU/microblaze_CPU/DEBUG]
@@ -264,9 +260,6 @@ connect_bd_net [get_bd_pins Memory/SDRAM/ui_clk] [get_bd_pins Memory/interconnec
 connect_bd_net [get_bd_pins Memory/CLK100] [get_bd_pins Memory/interconnect_DDR/ACLK]
 connect_bd_net [get_bd_pins Memory/CLK100] [get_bd_pins Memory/interconnect_DDR/S00_ACLK]
 connect_bd_net [get_bd_pins Memory/CLK100] [get_bd_pins Memory/interconnect_DDR/S01_ACLK]
-connect_bd_net [get_bd_pins Memory/CLK100] [get_bd_pins Memory/interconnect_DDR/S02_ACLK]
-connect_bd_net [get_bd_pins Memory/CLK100] [get_bd_pins Memory/interconnect_DDR/S03_ACLK]
-connect_bd_net [get_bd_pins Memory/CLK100] [get_bd_pins Memory/interconnect_DDR/S04_ACLK]
 connect_bd_net [get_bd_pins Memory/CLK100] [get_bd_pins LEDs/s_axi_aclk]
 connect_bd_net [get_bd_pins Memory/CLK100] [get_bd_pins QSPI/ext_spi_clk]
 connect_bd_net [get_bd_pins Memory/SDRAM/device_temp_i] [get_bd_pins xadc_wiz_0/temp_out]
@@ -291,9 +284,6 @@ connect_bd_net [get_bd_pins Memory/rst_mig_7series_0_100M_1/peripheral_aresetn] 
 connect_bd_net [get_bd_pins Memory/rst_mig_7series_0_100M_1/interconnect_aresetn] [get_bd_pins Memory/interconnect_DDR/M00_ARESETN]
 connect_bd_net [get_bd_pins Memory/rst_mig_7series_0_100M_1/interconnect_aresetn] [get_bd_pins Memory/interconnect_DDR/S00_ARESETN]
 connect_bd_net [get_bd_pins Memory/rst_mig_7series_0_100M_1/interconnect_aresetn] [get_bd_pins Memory/interconnect_DDR/S01_ARESETN]
-connect_bd_net [get_bd_pins Memory/rst_mig_7series_0_100M_1/interconnect_aresetn] [get_bd_pins Memory/interconnect_DDR/S02_ARESETN]
-connect_bd_net [get_bd_pins Memory/rst_mig_7series_0_100M_1/interconnect_aresetn] [get_bd_pins Memory/interconnect_DDR/S03_ARESETN]
-connect_bd_net [get_bd_pins Memory/rst_mig_7series_0_100M_1/interconnect_aresetn] [get_bd_pins Memory/interconnect_DDR/S04_ARESETN]
 connect_bd_net [get_bd_pins Memory/rst_mig_7series_0_100M_1/dcm_locked] [get_bd_pins Memory/SDRAM/mmcm_locked]
 connect_bd_net [get_bd_pins Memory/rst_mig_7series_0_100M_1/ext_reset_in] [get_bd_pins Memory/SDRAM/ui_clk_sync_rst]
 connect_bd_net [get_bd_pins Memory/rst_mig_7series_0_100M_1/slowest_sync_clk] [get_bd_pins Memory/SDRAM/ui_clk]
@@ -308,8 +298,9 @@ create_bd_port -dir I RGMII_rxc
 create_bd_port -dir O -from 3 -to 0 RGMII_td
 create_bd_port -dir O RGMII_tx_ctl
 create_bd_port -dir O RGMII_txc
+create_bd_port -dir O ETH_RST_N
 
-if { $ETH == "Gig_Eth"} {
+if { $ETH == "ETH"} {
   delete_bd_objs [get_bd_ports MDIO_mdc]
   delete_bd_objs [get_bd_ports MDIO_mdio_i]
   delete_bd_objs [get_bd_ports MDIO_mdio_o]
@@ -320,6 +311,7 @@ if { $ETH == "Gig_Eth"} {
   delete_bd_objs [get_bd_ports RGMII_td]
   delete_bd_objs [get_bd_ports RGMII_tx_ctl]
   delete_bd_objs [get_bd_ports RGMII_txc]
+  delete_bd_objs [get_bd_ports ETH_RST_N]
   create_bd_cell -type hier Ethernet
   move_bd_cells [get_bd_cells Ethernet] [get_bd_cells axi_ethernet]
   move_bd_cells [get_bd_cells Ethernet] [get_bd_cells clk_wiz]
@@ -343,6 +335,8 @@ if { $ETH == "Gig_Eth"} {
   connect_bd_intf_net [get_bd_intf_pins Ethernet/axi_ethernet/s_axis_txc] [get_bd_intf_pins Ethernet/axi_dma/M_AXIS_CNTRL]
   connect_bd_intf_net [get_bd_intf_pins Ethernet/axi_ethernet/s_axis_txd] [get_bd_intf_pins Ethernet/axi_dma/M_AXIS_MM2S]
   connect_bd_intf_net [get_bd_intf_pins Ethernet/axi_ethernet/s_axi] [get_bd_intf_pins CPU/interconnect_CPU/M09_AXI]
+  connect_bd_net [get_bd_pins CPU/S_AXI_ARESETN] [get_bd_pins CPU/interconnect_CPU/M09_ARESETN]
+  connect_bd_net [get_bd_pins CPU/Clk] [get_bd_pins CPU/interconnect_CPU/M09_ACLK]
   connect_bd_intf_net [get_bd_intf_pins Ethernet/axi_ethernet/m_axis_rxd] [get_bd_intf_pins Ethernet/axi_dma/S_AXIS_S2MM]
   connect_bd_intf_net [get_bd_intf_pins Ethernet/axi_ethernet/m_axis_rxs] [get_bd_intf_pins Ethernet/axi_dma/S_AXIS_STS]
   set MDIO [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:mdio_rtl:1.0 MDIO ]
@@ -352,7 +346,15 @@ if { $ETH == "Gig_Eth"} {
   connect_bd_intf_net [get_bd_intf_pins Ethernet/axi_dma/M_AXI_SG] [get_bd_intf_pins Memory/interconnect_DDR/S02_AXI]
   connect_bd_intf_net [get_bd_intf_pins Ethernet/axi_dma/M_AXI_MM2S] [get_bd_intf_pins Memory/interconnect_DDR/S03_AXI]
   connect_bd_intf_net [get_bd_intf_pins Ethernet/axi_dma/M_AXI_S2MM] [get_bd_intf_pins Memory/interconnect_DDR/S04_AXI]
+  connect_bd_net [get_bd_pins Memory/CLK100] [get_bd_pins Memory/interconnect_DDR/S02_ACLK]
+  connect_bd_net [get_bd_pins Memory/CLK100] [get_bd_pins Memory/interconnect_DDR/S03_ACLK]
+  connect_bd_net [get_bd_pins Memory/CLK100] [get_bd_pins Memory/interconnect_DDR/S04_ACLK]
+  connect_bd_net [get_bd_pins Memory/rst_mig_7series_0_100M_1/interconnect_aresetn] [get_bd_pins Memory/interconnect_DDR/S02_ARESETN]
+  connect_bd_net [get_bd_pins Memory/rst_mig_7series_0_100M_1/interconnect_aresetn] [get_bd_pins Memory/interconnect_DDR/S03_ARESETN]
+  connect_bd_net [get_bd_pins Memory/rst_mig_7series_0_100M_1/interconnect_aresetn] [get_bd_pins Memory/interconnect_DDR/S04_ARESETN]
   connect_bd_intf_net [get_bd_intf_pins Ethernet/axi_dma/S_AXI_LITE] [get_bd_intf_pins CPU/interconnect_CPU/M10_AXI]
+  connect_bd_net [get_bd_pins CPU/S_AXI_ARESETN] [get_bd_pins CPU/interconnect_CPU/M10_ARESETN]
+  connect_bd_net [get_bd_pins CPU/Clk] [get_bd_pins CPU/interconnect_CPU/M10_ACLK]
   connect_bd_net [get_bd_pins Ethernet/axi_dma/mm2s_introut] [get_bd_pins microblaze_xlconcat/In6]
   connect_bd_net [get_bd_pins Ethernet/axi_dma/s2mm_introut] [get_bd_pins microblaze_xlconcat/In7]
   create_bd_port -dir O -type rst ETH_RST_N

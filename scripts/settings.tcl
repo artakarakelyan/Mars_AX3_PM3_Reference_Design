@@ -1,5 +1,5 @@
 # ----------------------------------------------------------------------------------
-# Copyright (c) 2020 by Enclustra GmbH, Switzerland.
+# Copyright (c) 2021 by Enclustra GmbH, Switzerland.
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy of
 # this hardware, software, firmware, and associated documentation files (the
@@ -46,27 +46,27 @@ set module Mars_AX3
 switch $module_name {
   MA-AX3-35-1I-D8 {
     set part xc7a35tcsg324-1 
-    set ETH Gig_Eth
+    set ETH None
   }
   MA-AX3-50-1I-D8 {
     set part xc7a50tcsg324-1 
-    set ETH Gig_Eth
+    set ETH None
   }
   MA-AX3-100-2I-D8 {
     set part xc7a100tcsg324-2 
-    set ETH Gig_Eth
+    set ETH None
   }
   MA-AX3-35-1I-D8-ETH {
     set part xc7a35tcsg324-1 
-    set ETH Gig_Eth
+    set ETH ETH
   }
   MA-AX3-50-1I-D8-ETH {
     set part xc7a50tcsg324-1 
-    set ETH Gig_Eth
+    set ETH ETH
   }
   MA-AX3-100-2I-D8_ETH {
     set part xc7a100tcsg324-2 
-    set ETH Gig_Eth
+    set ETH ETH
   }
   default {
     puts "$module_name not available"
